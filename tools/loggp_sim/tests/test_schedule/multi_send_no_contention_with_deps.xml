@@ -1,0 +1,16 @@
+<collective name="multi_send_no_contention_with_deps" nodes="8" buffer_size="10">
+    <transfer id="0" size="1024" src="0" dst="1" deps="-1"/>
+    <transfer id="1" size="1024" src="0" dst="1" deps="-1"/>
+    <transfer id="2" size="1024" src="2" dst="3" deps="-1"/>
+    <transfer id="3" size="1024" src="7" dst="5" deps="-1"/>
+    
+    <transfer id="4" size="1024" src="5" dst="6" deps="3"/>
+    
+    <transfer id="5" size="1024" src="6" dst="7" deps="4"/>
+
+    <transfer id="6" size="1024" src="3" dst="2" deps="2"/>
+</collective>
+<!--
+    3 * (os + (1024 - 1) * G + L + or)
+    = 3 * (5 + 1023 * 1 + 10 + 6)
+-->

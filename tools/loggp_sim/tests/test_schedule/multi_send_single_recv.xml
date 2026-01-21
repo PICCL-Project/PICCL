@@ -1,0 +1,8 @@
+<collective name="multi_send_with_contention" nodes="8" buffer_size="1">
+    <transfer id="0" size="2" src="3" dst="0" deps="-1"/>
+    <transfer id="1" size="2" src="2" dst="0" deps="-1"/>
+</collective>
+<!--
+    os + (4 - 1) * G + L + or
+    = 5 + 3 * 10 + 100 + 6
+-->

@@ -1,0 +1,72 @@
+<collective name="allgather" algorithm="ring" nodes="8" buffer_size="32776">
+    # Round 1
+    <transfer id="0" size="4097" src="0" dst="1" deps="-1"/>
+    <transfer id="1" size="4097" src="1" dst="2" deps="-1"/>
+    <transfer id="2" size="4097" src="2" dst="3" deps="-1"/>
+    <transfer id="3" size="4097" src="3" dst="4" deps="-1"/>
+    <transfer id="4" size="4097" src="4" dst="5" deps="-1"/>
+    <transfer id="5" size="4097" src="5" dst="6" deps="-1"/>
+    <transfer id="6" size="4097" src="6" dst="7" deps="-1"/>
+    <transfer id="7" size="4097" src="7" dst="0" deps="-1"/>
+
+    # Round 2
+    <transfer id="8" size="4097" src="0" dst="1" deps="7"/>
+    <transfer id="9" size="4097" src="1" dst="2" deps="0"/>
+    <transfer id="10" size="4097" src="2" dst="3" deps="1"/>
+    <transfer id="11" size="4097" src="3" dst="4" deps="2"/>
+    <transfer id="12" size="4097" src="4" dst="5" deps="3"/>
+    <transfer id="13" size="4097" src="5" dst="6" deps="4"/>
+    <transfer id="14" size="4097" src="6" dst="7" deps="5"/>
+    <transfer id="15" size="4097" src="7" dst="0" deps="6"/>
+
+    # Round 3
+    <transfer id="16" size="4097" src="0" dst="1" deps="15"/>
+    <transfer id="17" size="4097" src="1" dst="2" deps="8"/>
+    <transfer id="18" size="4097" src="2" dst="3" deps="9"/>
+    <transfer id="19" size="4097" src="3" dst="4" deps="10"/>
+    <transfer id="20" size="4097" src="4" dst="5" deps="11"/>
+    <transfer id="21" size="4097" src="5" dst="6" deps="12"/>
+    <transfer id="22" size="4097" src="6" dst="7" deps="13"/>
+    <transfer id="23" size="4097" src="7" dst="0" deps="14"/>
+
+    # Round 4
+    <transfer id="24" size="4097" src="0" dst="1" deps="23"/>
+    <transfer id="25" size="4097" src="1" dst="2" deps="16"/>
+    <transfer id="26" size="4097" src="2" dst="3" deps="17"/>
+    <transfer id="27" size="4097" src="3" dst="4" deps="18"/>
+    <transfer id="28" size="4097" src="4" dst="5" deps="19"/>
+    <transfer id="29" size="4097" src="5" dst="6" deps="20"/>
+    <transfer id="30" size="4097" src="6" dst="7" deps="21"/>
+    <transfer id="31" size="4097" src="7" dst="0" deps="22"/>
+
+    # Round 5
+    <transfer id="32" size="4097" src="0" dst="1" deps="31"/>
+    <transfer id="33" size="4097" src="1" dst="2" deps="24"/>
+    <transfer id="34" size="4097" src="2" dst="3" deps="25"/>
+    <transfer id="35" size="4097" src="3" dst="4" deps="26"/>
+    <transfer id="36" size="4097" src="4" dst="5" deps="27"/>
+    <transfer id="37" size="4097" src="5" dst="6" deps="28"/>
+    <transfer id="38" size="4097" src="6" dst="7" deps="29"/>
+    <transfer id="39" size="4097" src="7" dst="0" deps="30"/>
+
+    # Round 6
+    <transfer id="40" size="4097" src="0" dst="1" deps="39"/>
+    <transfer id="41" size="4097" src="1" dst="2" deps="32"/>
+    <transfer id="42" size="4097" src="2" dst="3" deps="33"/>
+    <transfer id="43" size="4097" src="3" dst="4" deps="34"/>
+    <transfer id="44" size="4097" src="4" dst="5" deps="35"/>
+    <transfer id="45" size="4097" src="5" dst="6" deps="36"/>
+    <transfer id="46" size="4097" src="6" dst="7" deps="37"/>
+    <transfer id="47" size="4097" src="7" dst="0" deps="38"/>
+
+    # Round 7
+    <transfer id="48" size="4097" src="0" dst="1" deps="47"/>
+    <transfer id="49" size="4097" src="1" dst="2" deps="40"/>
+    <transfer id="50" size="4097" src="2" dst="3" deps="41"/>
+    <transfer id="51" size="4097" src="3" dst="4" deps="42"/>
+    <transfer id="52" size="4097" src="4" dst="5" deps="43"/>
+    <transfer id="53" size="4097" src="5" dst="6" deps="44"/>
+    <transfer id="54" size="4097" src="6" dst="7" deps="45"/>
+    <transfer id="55" size="4097" src="7" dst="0" deps="46"/>
+
+</collective>

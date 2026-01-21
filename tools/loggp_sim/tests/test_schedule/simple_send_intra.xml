@@ -1,0 +1,7 @@
+<collective name="simple_send_intra" nodes="8" buffer_size="1">
+    <transfer id="0" size="1024" src="0" dst="1" deps="-1"/>
+</collective>
+<!--
+    os + (1024 - 1) * G + L + or
+    = 5 + 1023 * 1 + 10 + 6
+-->

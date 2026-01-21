@@ -1,0 +1,10 @@
+<collective name="multi_send_no_contention" nodes="8" buffer_size="1">
+    <transfer id="0" size="1" src="0" dst="1" deps="-1"/>
+    <transfer id="1" size="1" src="0" dst="1" deps="-1"/>
+    <transfer id="2" size="1" src="2" dst="3" deps="-1"/>
+    <transfer id="3" size="1" src="5" dst="6" deps="-1"/>
+</collective>
+<!--
+    os + (1024 - 1) * G + L + or
+    = (5 + 1 * 1 + 10 + 6)
+-->
