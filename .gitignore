@@ -5,5 +5,7 @@ __pycache__/
 *.err
 .vscode/
 *.xml
+!tools/loggp_sim/tests/*/*.xml
+!tools/loggp_sim/schedules/*.xml
 libs/
 tools/msccl-tools
